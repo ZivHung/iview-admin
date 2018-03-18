@@ -5,37 +5,37 @@
 <template>
     <div class="home-main">
         <Row :gutter="10">
-            <Col :md="24" :lg="8">
+            <i-col :md="24" :lg="8">
                 <Row class-name="home-page-row1" :gutter="10">
-                    <Col :md="12" :lg="24" :style="{marginBottom: '10px'}">
+                    <i-col :md="12" :lg="24" :style="{marginBottom: '10px'}">
                         <Card>
                             <Row type="flex" class="user-infor">
-                                <Col span="8">
+                                <i-col span="8">
                                     <Row class-name="made-child-con-middle" type="flex" align="middle">
                                         <img class="avator-img" :src="avatorPath" />
                                     </Row>
-                                </Col>
-                                <Col span="16" style="padding-left:6px;">
+                                </i-col>
+                                <i-col span="16" style="padding-left:6px;">
                                     <Row class-name="made-child-con-middle" type="flex" align="middle">
                                         <div>
                                             <b class="card-user-infor-name">Admin</b>
                                             <p>super admin</p>
                                         </div>
                                     </Row>
-                                </Col>
+                                </i-col>
                             </Row>
                             <div class="line-gray"></div>
                             <Row class="margin-top-8">
-                                <Col span="8"><p class="notwrap">上次登录时间:</p></Col>
-                                <Col span="16" class="padding-left-8">2017.09.12-13:32:20</Col>
+                                <i-col span="8"><p class="notwrap">上次登录时间:</p></i-col>
+                                <i-col span="16" class="padding-left-8">2017.09.12-13:32:20</i-col>
                             </Row>
                             <Row class="margin-top-8">
-                                <Col span="8"><p class="notwrap">上次登录地点:</p></Col>
-                                <Col span="16" class="padding-left-8">北京</Col>
+                                <i-col span="8"><p class="notwrap">上次登录地点:</p></i-col>
+                                <i-col span="16" class="padding-left-8">北京</i-col>
                             </Row>
                         </Card>
-                    </Col>
-                    <Col :md="12" :lg="24" :style="{marginBottom: '10px'}">
+                    </i-col>
+                    <i-col :md="12" :lg="24" :style="{marginBottom: '10px'}">
                         <Card>
                             <p slot="title" class="card-title">
                                 <Icon type="android-checkbox-outline"></Icon>
@@ -63,12 +63,12 @@
                                 </div>
                             </div>
                         </Card>
-                    </Col>
+                    </i-col>
                 </Row>
-            </Col>
-            <Col :md="24" :lg="16">
+            </i-col>
+            <i-col :md="24" :lg="16">
                 <Row :gutter="5">
-                    <Col :xs="24" :sm="12" :md="6" :style="{marginBottom: '10px'}">
+                    <i-col :xs="24" :sm="12" :md="6" :style="{marginBottom: '10px'}">
                         <infor-card
                             id-name="user_created_count"
                             :end-val="count.createUser"
@@ -76,8 +76,8 @@
                             color="#2d8cf0"
                             intro-text="今日新增用户"
                         ></infor-card>
-                    </Col>
-                    <Col :xs="24" :sm="12" :md="6" :style="{marginBottom: '10px'}">
+                    </i-col>
+                    <i-col :xs="24" :sm="12" :md="6" :style="{marginBottom: '10px'}">
                         <infor-card
                             id-name="visit_count"
                             :end-val="count.visit"
@@ -86,8 +86,8 @@
                             :iconSize="50"
                             intro-text="今日浏览量"
                         ></infor-card>
-                    </Col>
-                    <Col :xs="24" :sm="12" :md="6" :style="{marginBottom: '10px'}">
+                    </i-col>
+                    <i-col :xs="24" :sm="12" :md="6" :style="{marginBottom: '10px'}">
                         <infor-card
                             id-name="collection_count"
                             :end-val="count.collection"
@@ -95,8 +95,8 @@
                             color="#ffd572"
                             intro-text="今日数据采集量"
                         ></infor-card>
-                    </Col>
-                    <Col :xs="24" :sm="12" :md="6" :style="{marginBottom: '10px'}">
+                    </i-col>
+                    <i-col :xs="24" :sm="12" :md="6" :style="{marginBottom: '10px'}">
                         <infor-card
                             id-name="transfer_count"
                             :end-val="count.transfer"
@@ -104,7 +104,7 @@
                             color="#f25e43"
                             intro-text="今日服务调用量"
                         ></infor-card>
-                    </Col>
+                    </i-col>
                 </Row>
                 <Row>
                     <Card :padding="0">
@@ -113,21 +113,21 @@
                             今日服务调用地理分布
                         </p>
                         <div class="map-con">
-                            <Col span="10">
+                            <i-col span="10">
                                 <map-data-table :cityData="cityData" height="281" :style-obj="{margin: '12px 0 0 11px'}"></map-data-table>
-                            </Col>
-                            <Col span="14" class="map-incon">
+                            </i-col>
+                            <i-col span="14" class="map-incon">
                                 <Row type="flex" justify="center" align="middle">
                                     <home-map :city-data="cityData"></home-map>
                                 </Row>
-                            </Col>
+                            </i-col>
                         </div>
                     </Card>
                 </Row>
-            </Col>
+            </i-col>
         </Row>
         <Row :gutter="10" class="margin-top-10">
-            <Col :md="24" :lg="8" :style="{marginBottom: '10px'}">
+            <i-col :md="24" :lg="8" :style="{marginBottom: '10px'}">
                 <Card>
                     <p slot="title" class="card-title">
                         <Icon type="android-map"></Icon>
@@ -137,8 +137,8 @@
                         <visite-volume></visite-volume>
                     </div>
                 </Card>
-            </Col>
-            <Col :md="24" :lg="8" :style="{marginBottom: '10px'}">
+            </i-col>
+            <i-col :md="24" :lg="8" :style="{marginBottom: '10px'}">
                 <Card>
                     <p slot="title" class="card-title">
                         <Icon type="ios-pulse-strong"></Icon>
@@ -148,8 +148,8 @@
                         <data-source-pie></data-source-pie>
                     </div>
                 </Card>
-            </Col>
-            <Col :md="24" :lg="8">
+            </i-col>
+            <i-col :md="24" :lg="8">
                 <Card>
                     <p slot="title" class="card-title">
                         <Icon type="android-wifi"></Icon>
@@ -159,7 +159,7 @@
                         <user-flow></user-flow>
                     </div>
                 </Card>
-            </Col>
+            </i-col>
         </Row>
         <Row class="margin-top-10">
             <Card>
